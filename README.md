@@ -6,7 +6,7 @@ TCP Port Forwarding Tester is written in an Electron environment, utilising HTML
 
 <strong>Overview </strong>
 
-TCP Port Forwarding Tester is a small application that can help determine if port forwarding rules configured for TCP ports are correctly configured, and whether the destination network is going to receive the traffic.
+TCP Port Forwarding Tester is a small application that can help determine if port forwarding rules for TCP ports are correctly configured, and whether the destination network is going to receive the traffic.
 
 <strong>How it works </strong> 
 
