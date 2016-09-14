@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>window.$ = window.jQuery = require('./js/jquery-1.11.1.min.js');</script>
+    <script src="js/dateformat.js"></script>
+    <script src="js/common-functions.js"></script>
+    <meta charset="UTF-8">
+    <title>TCP Port Forwarding Tester</title>
+    <link href='./css/css.css' type='text/css' rel='stylesheet' />
+    <link href='./css/animate.css' type='text/css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script>
+        $(function(){
+           $('#header').load("./template-menubar.html");
+        });
+    </script>
+</head>
+<body>
+    <div id='header'></div>
+    <div id='content'>
+        <h2>Receive TCP Traffic</h2>
+        <div class='content7030-l'>
+            <table width='100%'>
+                <tr width='100%'>
+                    <td width='40%'>Source TCP Port:</td>
+                    <td class='60%'><input type='number' id='port' placeholder='1-65535' required='required' /></td>
+                </tr>
+                <tr>
+                    <td>Source IP:</td>
+                    <td><input type='text' id='ip' placeholder='192.168.1.50' required='required' /></td>
+                </tr>
+            </table>
+        </div>
+        <div class='content7030-r'>
+            <button type='button' id='start-server' class='regular-large server-stopped' >Start Server</button>
+        </div>
+        <div class='clear'></div>
+        <div id='console'></div>
+    </div>
+</body>
+<script>
+    require('./receive-traffic.js')
+</script>
+</html>

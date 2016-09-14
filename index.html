@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>window.$ = window.jQuery = require('./js/jquery-1.11.1.min.js');</script>
+    <script src="js/dateformat.js"></script>
+    <script src="js/common-functions.js"></script>
+    <meta charset="UTF-8">
+    <title>TCP Port Forwarding Tester</title>
+    <link href='./css/css.css' type='text/css' rel='stylesheet' />
+    <link href='./css/animate.css' type='text/css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div id='content'>
+        <h1 class='animated zoomInDown'>TCP Port Forwarding Tester</h1><br />
+
+        <p class='animated bounceInDown'>
+            <a href='receive-traffic.html' class='home'>Receive Traffic</a>
+            <a href='send-traffic.html' class='home'>Send Traffic</a>
+        </p><br />
+
+        <div class='content5050-l animated zoomInUp'>
+            <p>
+                <strong>Overview </strong> <br />
+                TCP Port Forwarding Tester is a small application that can help determine if port forwarding rules for TCP ports
+                are correctly configured, and whether the destination network is going to receive the traffic.
+            </p>
+            <p>
+                <strong>How it works </strong> <br />
+                You will need two instances of this application - one at the source network and one at the destination network. The source network
+                will send a message to the destination network. If the destination network has port forwarding (and ACLs, NATs) correctly configured,
+                then the application in the destination network will receive the message.
+            </p>
+            <p class='blue'>v1.0 08/09/2016 | James McDermott | www.jmcdermott.ie</p>
+        </div>
+        <div class='content5050-r animated zoomInUp'>
+            <p>
+                <strong>Example Scenario </strong> <br />
+                You are told by the destination network's engineer that he has configured port forwarding on TCP port 2000 to forward
+                traffic to internal IP 192.168.1.50. The public IP associated with this network is 50.50.50.50. <br /><br />
+
+                <em>Destination network:</em> <br />
+                Configure computer with a static internal IP address of 192.168.1.50 (ensure no other devices have this IP).
+                While testing, turn off the computer's local firewall.
+                On the same computer, open this application. Select 'Receive Traffic'.
+                Enter 2000 as the Source Port and 192.168.1.50 as the Source IP. Click 'Start Server'. If you receive a
+                message from the application in the source network, then the port forwarding configuration is working. <br /><br />
+
+                <em>Source network:</em> <br />
+                Open 'Send Traffic'. Enter 2000 as the port, 50.50.50.50 as the IP and then press send. If the message was
+                delivered to the destination network, you will receive a receipt.
+            </p>
+        </div>
+        <div class='clear'></div>
+    </div>
+</body>
+</html>
