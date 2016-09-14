@@ -1,0 +1,197 @@
+
+/*
+-------------------------------------------------------------------------------------
+ BODY, PAGE
+ -------------------------------------------------------------------------------------
+*/
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #252525;
+    width: 100%;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+/*
+-------------------------------------------------------------------------------------
+ STYLING
+ -------------------------------------------------------------------------------------
+*/
+
+h1 {
+    font-size: 48px;
+    color: #60718e;
+}
+
+h2 {
+    font-size: 28px;
+    color: #303030;
+}
+
+p {
+    color: #353535;
+    font-size: 15px;
+}
+
+p.blue {
+    color: #475c74;
+    font-size: 13px;
+}
+
+button.regular-large {
+    width: 170px;
+    height: 70px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button.regular-large:hover, button.regular-large:active {
+    border: none;
+}
+
+button.server-stopped {
+    background-color: #5e9c75;
+}
+
+button.server-started {
+    background-color: #b16b6b;
+}
+
+span.log-green {
+    color: #5e9c75;
+}
+
+span.log-red {
+    color: #b16b6b;
+}
+
+span.log-white {
+    color: #ffffff;
+}
+
+span.log-grey {
+    color: #707070;
+}
+
+a.header, a.header:focus {
+    border: 1px solid #a88298;
+    background-color: #a88298;
+    padding: 10px 20px 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    outline:none;
+}
+
+a.header:hover {
+    background-color: #957085;
+}
+
+a.home, a.home:focus {
+    border: 1px solid #a88298;
+    background-color: #a88298;
+    padding: 20px 30px 20px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    outline:none;
+}
+
+a.home:hover {
+    background-color: #957085;
+}
+
+
+/*
+-------------------------------------------------------------------------------------
+ HEADER
+ -------------------------------------------------------------------------------------
+*/
+
+#header {
+    width: 92%;
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+    padding: 0% 4% 0% 4%;
+}
+
+#header-l {
+    float: left;
+    width: 32%;
+    padding: 4px 0px 4px 0px;
+}
+
+#header-r {
+    float: left;
+    width: 68%;
+    text-align: right;
+    padding: 4px 0px 4px 0px;
+}
+
+
+
+/*
+-------------------------------------------------------------------------------------
+ CONTENT
+ -------------------------------------------------------------------------------------
+*/
+
+#content {
+    width: 80%;
+    padding: 0% 10% 0% 10%;
+}
+
+div#console {
+    width: 100%;
+    height: 350px;
+    background-color: #151515;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+    overflow: scroll;
+    resize: vertical
+}
+
+.content7030-l {
+    width: 65%;
+    padding-right: 5%;
+    float: left;
+}
+
+.content7030-r {
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+
+.content5050-l {
+    width: 45%;
+    padding-right: 5%;
+    float: left;
+}
+
+.content5050-r {
+    width: 50%;
+    float: left;
+}
+
+/*
+-------------------------------------------------------------------------------------
+ FORMS
+ -------------------------------------------------------------------------------------
+*/
+
+input {
+    width: 150px;
+    height: 30px;
+}
+
+select, option {
+    width: 150px;
+    height: 35px;
+}
